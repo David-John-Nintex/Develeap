@@ -14,8 +14,16 @@ spec:
       labels:
         app: nginx
     spec:
+      volumes:
+      - name: my-page
+        configMap:
+          name: my-page
       containers:
       - image: nginx:alpine
         name: nginx
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: my-page
+          mountPath: /usr/share/nginx/html
+
