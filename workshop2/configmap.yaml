@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-page
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Welcome to my website</title>
+        <style>
+          body {
+            background-color: white;
+          }
+          h1 {
+            color: orange;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Good job!</h1>
+      </body>
+    </html>
