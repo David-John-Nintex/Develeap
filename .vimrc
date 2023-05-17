@@ -13,7 +13,8 @@ set smartcase
 set laststatus=2
 
 set nu!
-set ts=4
+set ts=2
+set expandtab
 
 set list! listchars=tab:>_,trail:_,eol:$
 set sw=4
