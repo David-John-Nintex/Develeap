@@ -13,10 +13,10 @@ set smartcase
 set laststatus=2
 
 set nu!
-set ts=2
+set ts=4
 set expandtab
 
-set list! listchars=tab:>_,trail:_,eol:$
+set list! listchars=space:.,tab:>_,precedes:<,trail:_,eol:$,extends:>
 set sw=4
 
 set fileencoding=utf8
