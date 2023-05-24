@@ -65,9 +65,9 @@ spec:
         - name: MONGODB_REPLICA_SET_NAME
           value: "rs0"
         - name: MONGODB_INITIAL_PRIMARY_HOST
-          value: "mongodb-0.mongodb-service.davidjohn.svc.cluster.local"
+          value: "mongodb-0.mongodb-service"
         - name: MONGODB_ADVERTISED_HOSTNAME
-          value: "$(POD_NAME).mongodb-service.davidjohn.svc.cluster.local"
+          value: "$(POD_NAME).mongodb-service"
         - name: ALLOW_EMPTY_PASSWORD
           value: "yes"
         command:
