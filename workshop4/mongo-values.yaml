@@ -1,0 +1,27 @@
+commonLabels:
+  owner: davidjohn
+
+auth:
+  rootUser: root_user
+  rootPassword: MySp3c1alP@ssW0rd!
+  usernames:
+   - single_user
+  passwords:
+   - "@S1mpl3P@ss"
+  databases:
+   - first_db
+
+architecture: replicaset
+replicaSetName: rs0
+
+replicaSetConfigurationSettings:
+  enabled: true
+
+replicaCount: 3
+terminationGracePeriod: 10
+
+persistence:
+  enabled: true
+  size: 1Gi
+
+

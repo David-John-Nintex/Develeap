@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dj-demo-crm-deployment
+  labels:
+    app: dj-demo-crm
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dj-demo-crm
+  template:
+    metadata:
+      labels:
+        app: dj-demo-crm
+    spec:
+      containers:
+      - name: demo-crm
+        image: pwstaging/demo-crm:latest
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: dj-demo-crm-conf
+
