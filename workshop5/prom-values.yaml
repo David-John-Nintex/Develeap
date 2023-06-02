@@ -1,0 +1,17 @@
+global:
+  rbac:
+    create: false
+grafana:
+  rbac:
+    create: false
+kube-state-metrics:
+  rbac:
+    create: false
+
+kubernetesServiceMonitors:
+  enabled: false
+
+prometheusOperator:
+  admissionWebhooks:
+    enabled: false
+
